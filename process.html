@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understand the step-by-step construction process with Heart of Home Family Housing. From affordability checks to handover.">
+    <title>Construction Process | Heart of Home Family Housing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body class="site-body">
+
+    <header class="header" id="mainHeader">
+        <div class="logo">
+            <a href="index.html"><span>HEART OF</span> HOME</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="house-types.html">House Types</a>
+            <a href="process.html">The Process</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>From Concept to Completion</h1>
+            <p>We build your dream home with precision, care, and transparency. Follow our proven construction process and watch your vision come to life.</p>
+            <a href="contact.html" class="btn">Start Your Project Today</a>
+        </section>
+
+        <!-- Step-by-Step Guide -->
+        <section class="construction-process">
+            <div class="container">
+                <h2>Our Step-by-Step Construction Process</h2>
+
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                    <div>
+                        <h3>1. Consultation & Planning</h3>
+                        <p>We begin by understanding your vision, analyzing the site, setting a budget, and creating a clear project timeline.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+                    <div>
+                        <h3>2. Design & Approval</h3>
+                        <p>Our architects provide detailed plans and 3D renders, ensuring your dream home is exactly as imagined before construction begins.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                    <div>
+                        <h3>3. Material Selection & Procurement</h3>
+                        <p>We source high-quality materials efficiently to maintain timelines and ensure long-lasting results.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <div>
+                        <h3>4. Construction & Project Management</h3>
+                        <p>Our skilled teams work diligently on-site, while you receive regular progress updates for complete transparency.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step">
+                    <div class="icon"><i class="fa-solid fa-key"></i></div>
+                    <div>
+                        <h3>5. Quality Control & Handover</h3>
+                        <p>We conduct a final inspection, walk you through your new home, and provide warranty assurance for peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section dark">
+            <div class="container">
+                <div style="text-align: center;">
+                    <a href="contact.html" class="btn">Schedule Your Consultation Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Heart of Home Family Housing</strong></p>
+        <p>Okahandja, Namibia</p>
+        <p>Phone: <a href="tel:0814586318">081 458 6318</a> | Email: <a href="mailto:admin@rimonnamibia.com">admin@rimonnamibia.com</a></p>
+        <br>
+        <p>&copy; 2024 Heart of Home Family Housing. All Rights Reserved.</p>
+        <nav>
+            <a href="faq.html">FAQ</a>
+            <a href="estimator.html">Estimator</a>
+            <a href="investors.html">Investors</a>
+            <a href="legal.html">Legal</a>
+        </nav>
+        <p class="footer-tagline">Quality Construction & Reliable Service</p>
+    </footer>
+
+    <a href="https://wa.me/264814586318" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"></a>
+    <div class="social-float">
+      <a href="#" class="fb" title="Facebook">F</a>
+      <a href="#" class="ig" title="Instagram">I</a>
+      <a href="#" class="wa" title="WhatsApp">W</a>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- SCROLL ANIMATIONS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.process-step, .testimonial');
+
+            function scrollAnimation() {
+                const triggerBottom = window.innerHeight * 0.9;
+                elements.forEach(el => {
+                    const elTop = el.getBoundingClientRect().top;
+                    if(elTop < triggerBottom) el.classList.add('visible');
+                });
+            }
+
+            window.addEventListener('scroll', scrollAnimation);
+            scrollAnimation(); // Trigger on load
+        });
+    </script>
+</body>
+</html>
