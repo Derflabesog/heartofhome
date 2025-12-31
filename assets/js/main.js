@@ -43,4 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const value = bar.getAttribute('data-progress');
         if (fill && value) fill.style.width = value;
     });
+
+    // Blog Search Functionality
+    const searchInput = document.getElementById('blogSearch');
+    const blogPosts = document.querySelectorAll('#blog-posts .card');
+
+    if (searchInput && blogPosts.length > 0) {
+        searchInput.addEventListener('keyup', (e) => {
+            const term = e.target.value.toLowerCase();
+            blogPosts.forEach(post => {
+                const title = post.querySelector('h3').innerText.toLowerCase();
+                const desc = post.querySelector('p').innerText.toLowerCase();
+                post.style.display = (title.includes(term) || desc.includes(term)) ? 'block' : 'none';
+            });
+        });
+    }
 });
