@@ -58,4 +58,62 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('backToTop');
+    if (backToTopButton) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Gallery Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const captionText = document.getElementById('caption');
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const closeBtn = document.querySelector('.close-lightbox');
+
+    if (lightbox) {
+        galleryItems.forEach(img => {
+            img.parentElement.addEventListener('click', () => {
+                lightbox.style.display = "block";
+                lightboxImg.src = img.src;
+                captionText.innerHTML = img.alt;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = "none";
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) lightbox.style.display = "none";
+        });
+    }
+
+    // Gallery Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryDivs = document.querySelectorAll('.gallery-item');
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                galleryDivs.forEach(item => {
+                    item.style.display = (filter === 'all' || item.getAttribute('data-category') === filter) ? 'block' : 'none';
+                });
+            });
+        });
+    }
 });

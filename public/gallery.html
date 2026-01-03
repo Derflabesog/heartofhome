@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Heart of Home</title>
+    <meta name="description" content="View our completed construction projects, interiors, and work-in-progress in Namibia.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body class="site-body">
+
+    <header class="header" id="mainHeader">
+        <div class="logo"><a href="index.html"><span>HEART OF</span> HOME</a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">DIY Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height: 40vh; background-image: url('assets/images/hero/namibian-home-hero.jpg');">
+        <h1>Project Gallery</h1>
+        <p>A visual showcase of our quality workmanship and completed homes.</p>
+    </section>
+
+    <section class="section">
+        <!-- Gallery Filter Buttons -->
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="completed">Completed Homes</button>
+            <button class="filter-btn" data-filter="construction">Under Construction</button>
+            <button class="filter-btn" data-filter="interiors">Interiors</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Item 1 -->
+            <div class="gallery-item" data-category="completed" data-aos="fade-up">
+                <img src="assets/images/projects/project-1.jpg" alt="Modern Family Home - Osona" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <!-- Item 2 -->
+            <div class="gallery-item" data-category="construction" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/images/projects/project-2.jpg" alt="Foundation & Brickwork" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <!-- Item 3 -->
+            <div class="gallery-item" data-category="interiors" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/services/renovations.jpg" alt="Modern Kitchen Finishes" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <!-- Item 4 -->
+            <div class="gallery-item" data-category="completed" data-aos="fade-up">
+                <img src="assets/images/projects/project-3.jpg" alt="Dolerite Ridge Estate Home" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <!-- Item 5 -->
+            <div class="gallery-item" data-category="construction" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/images/services/project-management.jpg" alt="Site Supervision" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <!-- Item 6 -->
+            <div class="gallery-item" data-category="interiors" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/projects/project-4.jpg" alt="Open Plan Living Area" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal (Hidden by default) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p><strong>Heart of Home Family Housing</strong></p>
+        <p>&copy; 2024 Heart of Home Family Housing. All Rights Reserved.</p>
+    </footer>
+
+    <div class="social-float">
+      <a href="#" class="fb" title="Facebook">F</a>
+      <a href="#" class="ig" title="Instagram">I</a>
+      <a href="#" class="wa" title="WhatsApp">W</a>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
