@@ -15,7 +15,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Heart of Home Real Estate">
 <meta property="og:description" content="We design and build your dream home in Okahandja, Namibia. Modern family houses with lasting quality.">
-<meta property="og:image" content="assets/images/hero-ai.jpg">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=1200">
 <meta property="og:url" content="https://yourwebsite.com">
 <meta property="og:type" content="website">
 
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Heart of Home Real Estate">
 <meta name="twitter:description" content="We design and build your dream home in Okahandja, Namibia. Modern family houses with lasting quality.">
-<meta name="twitter:image" content="assets/images/hero-ai.jpg">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=1200">
 
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -66,7 +66,7 @@
 </header>
 
 <!-- Hero Section -->
-<section id="hero" class="relative h-96 bg-cover bg-center mt-16" style="background-image: url('assets/images/hero/namibian-home-hero.jpg');">
+<section id="hero" class="relative h-96 bg-cover bg-center mt-16" style="background-image: url('https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=2000');">
   <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
     <h1 class="text-white text-4xl md:text-6xl font-bold text-center px-4">Heart of Home Real Estate</h1>
   </div>
@@ -103,19 +103,19 @@
     <h3 class="text-2xl font-bold text-center text-red-600 mb-6">Our Services</h3>
     <div class="grid md:grid-cols-4 gap-6">
       <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
-        <img src="assets/images/services/residential-build.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Namibian residential construction site with builders" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Namibian residential construction site with builders" loading="lazy">
         <p>Design & Build Your Dream Home</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
-        <img src="assets/images/services/renovations.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Modern home renovation in Namibia" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Modern home renovation in Namibia" loading="lazy">
         <p>Personalized Home Architecture & Design</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
-        <img src="assets/images/services/project-management.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Construction project manager on site" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Construction project manager on site" loading="lazy">
         <p>Assistance in Choosing Plot Sizes & Layouts</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
-        <img src="assets/images/projects/project-2.jpg" class="w-full h-40 object-cover rounded mb-4" alt="Full home construction service" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Full home construction service" loading="lazy">
         <p>Full Home Construction Services</p>
       </div>
     </div>
@@ -190,24 +190,34 @@
 </section>
 
 <!-- Contact / Lead Form -->
-<div class="max-w-md mx-auto bg-gray-800 p-6 rounded-lg mb-6">
-  <form action="https://formsubmit.co/admin@rimonnamibia.com" method="POST" class="flex flex-col gap-4">
-    <!-- FormSubmit hidden fields -->
-    <input type="hidden" name="_subject" value="New Lead from Footer">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://derflabesog.github.io/heartofhome/index.html">
+<footer class="bg-gray-900 text-white py-16" id="contact">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+    <p class="mb-6">Okahandja, Namibia | 📞 081 442 5143 | 📧 admin@rimonnamibia.com</p>
 
-    <!-- User inputs -->
-    <input type="text" name="name" placeholder="Name" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
-    <input type="text" name="contact" placeholder="Email/Phone" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
-    <textarea name="message" placeholder="I'm interested in..." rows="3" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required></textarea>
+    <div class="max-w-md mx-auto bg-gray-800 p-6 rounded-lg mb-6">
+      <form action="https://formsubmit.co/admin@rimonnamibia.com" method="POST" class="flex flex-col gap-4">
+        <input type="hidden" name="_subject" value="New Lead from Footer">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://derflabesog.github.io/heartofhome/index.html">
 
-    <!-- Submit button -->
-    <button type="submit" class="bg-gradient-to-r from-red-600 to-red-500 text-white py-3 rounded font-bold hover:from-red-700 hover:to-red-600 transition transform hover:scale-105">
-      Contact Us Now
-    </button>
-  </form>
-</div>
+        <input type="text" name="name" placeholder="Name" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <input type="text" name="contact" placeholder="Email/Phone" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <textarea name="message" placeholder="I'm interested in..." rows="3" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required></textarea>
+        <button type="submit" class="bg-gradient-to-r from-red-600 to-red-500 text-white py-3 rounded font-bold hover:from-red-700 hover:to-red-600 transition transform hover:scale-105">Contact Us Now</button>
+      </form>
+    </div>
+
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://www.facebook.com/profile.php?id=61575515670475" target="_blank" class="hover:text-red-500 transition">Facebook</a>
+    </div>
+
+    <p class="text-gray-400 text-sm">&copy; 2026 Heart of Home Real Estate. All rights reserved.</p>
+    <div class="mt-4">
+      <a href="company-profile.pdf" target="_blank" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition">Download Company Profile</a>
+    </div>
+  </div>
+</footer>
 
 <!-- Facebook SDK -->
 <div id="fb-root"></div>

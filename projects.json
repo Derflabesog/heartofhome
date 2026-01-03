@@ -1,22 +1,22 @@
 [
   {
     "title": "Modern Family Home – Okahandja",
-    "image": "assets/images/projects/project-1.jpg",
+    "image": "https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=800",
     "features": ["3 Bedrooms", "Open Plan", "Garage"]
   },
   {
     "title": "House Under Construction",
-    "image": "assets/images/projects/project-2.jpg",
+    "image": "https://images.unsplash.com/photo-1593604340846-4fbe976bd128?q=80&w=800",
     "features": ["Strong Foundation", "Modern Design"]
   },
   {
     "title": "Starter Family Home",
-    "image": "assets/images/projects/project-3.jpg",
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800",
     "features": ["Affordable", "Expandable"]
   },
   {
     "title": "Luxury Finish Home",
-    "image": "assets/images/projects/project-4.jpg",
+    "image": "https://images.unsplash.com/photo-1584622050111-993a426fbf0a?q=80&w=800",
     "features": ["Premium Materials", "Modern Look"]
   }
 ]
