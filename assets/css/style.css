@@ -2,12 +2,13 @@
 :root {
     --header-height-initial: 90px;
     --header-height-shrink: 60px;
-    --primary-color: #c00000; /* Deep Red (Heart of Home Brand) */
-    --secondary-color: #a00000; /* Darker Red for hover states */
-    --dark-bg: #1a1a1a;
-    --light-bg: #f4f4f4;
+    --primary-color: #B11226; /* Namibian Deep Red */
+    --secondary-color: #003580; /* Dark Blue */
+    --accent-color: #F2A900; /* Gold */
+    --dark-bg: #1F2933; /* Charcoal */
+    --light-bg: #F9FAFB; /* Light Gray */
     --text-light: #ffffff;
-    --text-dark: #333333;
+    --text-dark: #1F2933;
     --shadow-light: 0 4px 6px rgba(0,0,0,0.05);
     --shadow-medium: 0 8px 15px rgba(0,0,0,0.1);
     --shadow-hover: 0 15px 30px rgba(0,0,0,0.15);
@@ -160,7 +161,7 @@ html {
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     transform: translateY(-3px);
     box-shadow: var(--shadow-medium);
 }
@@ -173,7 +174,7 @@ html {
 
 .btn-secondary:hover {
     background-color: #f0f0f0;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     transform: translateY(-3px);
     box-shadow: var(--shadow-light);
 }
