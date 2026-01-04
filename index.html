@@ -28,21 +28,46 @@
 <body class="bg-white text-gray-800">
 
 <!-- ================= HEADER ================= -->
-<header class="bg-gray-900 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Heart of Home 🇳🇦</h1>
-    <nav class="space-x-6">
-      <a href="index.html" class="hover:text-red-500 transition">Home</a>
-      <a href="services.html" class="hover:text-red-500 transition">Services</a>
-      <a href="projects.html" class="hover:text-red-500 transition">Projects</a>
-      <a href="diy.html" class="hover:text-red-500 transition">DIY Blog</a>
-      <a href="contact.html" class="hover:text-red-500 transition">Contact</a>
+<header class="fixed top-0 left-0 w-full bg-gray-900 shadow z-50">
+  <div class="container mx-auto px-6 flex justify-between items-center h-16">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <span class="text-2xl font-bold">
+        <span class="text-red-600">HEART</span>
+        <span class="text-white">OF HOME</span>
+      </span>
+    </a>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 font-semibold text-gray-300 items-center">
+      <a href="index.html" class="text-white transition">Home</a>
+      <a href="about.html" class="hover:text-white transition">About</a>
+      <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="projects.html" class="hover:text-white transition">Projects</a>
+      <a href="diy.html" class="hover:text-white transition">DIY Blog</a>
+      <a href="contact.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Contact</a>
     </nav>
+    <!-- Mobile Hamburger -->
+    <div class="md:hidden">
+      <button id="menuBtn" class="focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-gray-900">
+    <a href="index.html" class="block px-6 py-3 text-white bg-gray-800">Home</a>
+    <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">About</a>
+    <a href="services.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Services</a>
+    <a href="projects.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Projects</a>
+    <a href="diy.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">DIY Blog</a>
+    <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Contact</a>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="relative h-[85vh] flex items-center justify-center text-center text-white">
+<section class="relative h-[85vh] flex items-center justify-center text-center text-white pt-16">
   <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41"
        alt="Namibia construction site"
        class="absolute inset-0 w-full h-full object-cover">
