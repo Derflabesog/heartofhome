@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Discover our mission, team, and projects. Building quality homes in Namibia with passion and expertise.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200">
 
-<link rel="canonical" href="https://yourdomain.com/">
+<link rel="canonical" href="https://derflabesog.github.io/heartofhome/about.html">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
   html { scroll-behavior: smooth; }
@@ -39,9 +39,12 @@
   <div class="container mx-auto px-6 flex justify-between items-center h-16">
     <!-- Logo -->
     <a href="index.html" class="flex items-center gap-3 group">
-      <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 group-hover:border-red-600 transition-colors">
-        <span class="text-red-600 font-bold text-lg">H</span>
-      </div>
+      <img
+        src="assets/images/logo.png"
+        alt="Heart of Home Logo"
+        width="40" height="40"
+        class="w-10 h-10 object-contain"
+      />
       <span class="text-2xl font-bold tracking-wide">
         <span class="text-red-600">HEART</span>
         <span class="text-white">OF HOME</span>
@@ -53,12 +56,14 @@
       <a href="about.html" class="text-white transition">About</a>
       <a href="services.html" class="hover:text-white transition">Services</a>
       <a href="projects.html" class="hover:text-white transition">Projects</a>
+      <a href="process.html" class="hover:text-white transition">The Process</a>
+      <a href="investors.html" class="hover:text-white transition">Investors</a>
       <a href="diy.html" class="hover:text-white transition">DIY Blog</a>
       <a href="contact.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Contact</a>
     </nav>
     <!-- Mobile Hamburger -->
     <div class="md:hidden">
-      <button id="menuBtn" class="focus:outline-none">
+      <button id="menuBtn" class="focus:outline-none" aria-label="Toggle navigation" aria-expanded="false">
         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -71,6 +76,8 @@
     <a href="about.html" class="block px-6 py-3 text-white bg-gray-800">About</a>
     <a href="services.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Services</a>
     <a href="projects.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Projects</a>
+    <a href="process.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">The Process</a>
+    <a href="investors.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Investors</a>
     <a href="diy.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">DIY Blog</a>
     <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Contact</a>
   </div>
@@ -95,19 +102,19 @@
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Team Member 1 -->
       <div class="bg-white rounded-lg shadow hover:-translate-y-1 transition p-4">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800" class="w-full h-64 object-cover rounded mb-4" alt="Managing Director">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800" class="w-full h-64 object-cover rounded mb-4" alt="Managing Director" loading="lazy" width="800" height="600">
         <h4 class="text-xl font-semibold text-gray-900">Alfred Goseb</h4>
         <p class="text-red-600 font-medium">Managing Director</p>
       </div>
       <!-- Team Member 2 -->
       <div class="bg-white rounded-lg shadow hover:-translate-y-1 transition p-4">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" class="w-full h-64 object-cover rounded mb-4" alt="Lead Architect">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" class="w-full h-64 object-cover rounded mb-4" alt="Lead Architect" loading="lazy" width="800" height="600">
         <h4 class="text-xl font-semibold text-gray-900">Jane Smith</h4>
         <p class="text-red-600 font-medium">Lead Architect</p>
       </div>
       <!-- Team Member 3 -->
       <div class="bg-white rounded-lg shadow hover:-translate-y-1 transition p-4">
-        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800" class="w-full h-64 object-cover rounded mb-4" alt="Project Manager">
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800" class="w-full h-64 object-cover rounded mb-4" alt="Project Manager" loading="lazy" width="800" height="600">
         <h4 class="text-xl font-semibold text-gray-900">Michael Brown</h4>
         <p class="text-red-600 font-medium">Project Manager</p>
       </div>
@@ -116,15 +123,68 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white py-16 text-center">
-  <p class="text-gray-400">&copy; 2026 Heart of Home Construction</p>
-  <a href="company-profile.pdf" target="_blank" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition mt-4 inline-block">Download Company Profile</a>
+<footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-8">
+      <!-- Column 1: Company -->
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="Heart of Home Logo" class="w-8 h-8 object-contain"/>
+          <span class="text-xl font-bold tracking-wide"><span class="text-red-600">HEART</span><span class="text-white">OF HOME</span></span>
+        </a>
+        <p class="text-gray-400 text-sm mb-4">
+          Heart of Home Construction is a Namibian building company specializing in residential construction, renovations, and DIY guidance.
+        </p>
+        <p class="text-gray-400 text-sm">
+          📍 Okahandja & Windhoek, Namibia 🇳🇦
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500 transition">About</a></li>
+          <li><a href="services.html" class="hover:text-red-500 transition">Services</a></li>
+          <li><a href="projects.html" class="hover:text-red-500 transition">Projects</a></li>
+          <li><a href="house-types.html" class="hover:text-red-500 transition">House Types</a></li>
+          <li><a href="diy.html" class="hover:text-red-500 transition">DIY Blog</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Legal & Tools -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Legal & Tools</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="faq.html" class="hover:text-red-500 transition">FAQ</a></li>
+          <li><a href="estimator.html" class="hover:text-red-500 transition">Estimator</a></li>
+          <li><a href="investors.html" class="hover:text-red-500 transition">Investors</a></li>
+          <li><a href="legal.html" class="hover:text-red-500 transition">Legal</a></li>
+          <li><a href="privacy.html" class="hover:text-red-500 transition">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-500 text-sm">&copy; 2026 Heart of Home Construction. All rights reserved.</p>
+      <p class="text-gray-600 text-xs mt-2">Built in Namibia 🇳🇦</p>
+    </div>
+  </div>
 </footer>
 
 <script>
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
-menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('hidden'));
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const isExpanded = !mobileMenu.classList.contains('hidden');
+    menuBtn.setAttribute('aria-expanded', isExpanded);
+  });
+}
 </script>
 
 <!-- WhatsApp Floating Button -->

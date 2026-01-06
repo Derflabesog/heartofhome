@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart of Home | Trusted Construction & Renovations in Namibia</title>
 
-  <title>Heart of Home Construction | Premier Builders in Namibia</title>
+<!-- SEO Meta -->
+<meta name="description" content="Premier construction company in Namibia. We specialize in new home builds, renovations, and project management in Windhoek & Okahandja. Quality workmanship guaranteed.">
+<meta name="keywords" content="Namibia construction company, Home builders Namibia, Renovation services Windhoek, Affordable housing Namibia, Building contractors Okahandja">
+<meta name="author" content="Heart of Home Real Estate">
 
-  <meta name="description" content="Heart of Home Construction: Trusted Namibian builders specializing in new homes, renovations, and DIY guidance. Quality workmanship in Windhoek & Okahandja.">
-  <meta name="keywords" content="construction Namibia, builders Windhoek, home renovations Okahandja, DIY construction Namibia, affordable housing">
-  <meta name="author" content="Heart of Home Construction">
+<link rel="canonical" href="https://derflabesog.github.io/heartofhome/">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Heart of Home Real Estate">
+<meta property="og:description" content="We design and build your dream home in Okahandja, Namibia. Modern family houses with lasting quality.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=1200">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
 
-  <!-- Google Analytics (replace later) -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-  -->
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Heart of Home Real Estate">
+<meta name="twitter:description" content="We design and build your dream home in Okahandja, Namibia. Modern family houses with lasting quality.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=1200">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { scroll-behavior: smooth; }
+</style>
+
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // Replace G-XXXXXXXXXX with your Measurement ID
+</script>
+
+<!-- Structured Data: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Heart of Home Construction",
+  "image": "https://derflabesog.github.io/heartofhome/assets/images/logo.png",
+  "telephone": "+264814425143",
+  "email": "admin@rimonnamibia.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Okahandja",
+    "addressCountry": "NA"
+  },
+  "url": "https://derflabesog.github.io/heartofhome/"
+}
+</script>
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body class="bg-white text-gray-800">
-
-<!-- ================= HEADER ================= -->
+<!-- Sticky Top Navigation -->
 <header class="fixed top-0 left-0 w-full bg-gray-900 shadow z-50">
   <div class="container mx-auto px-6 flex justify-between items-center h-16">
     <!-- Logo -->
     <a href="index.html" class="flex items-center gap-3 group">
-      <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 group-hover:border-red-600 transition-colors">
-        <span class="text-red-600 font-bold text-lg">H</span>
-      </div>
+      <img
+        src="assets/images/logo.png"
+        alt="Heart of Home Logo"
+        width="40" height="40"
+        class="w-10 h-10 object-contain"
+      />
       <span class="text-2xl font-bold tracking-wide">
         <span class="text-red-600">HEART</span>
         <span class="text-white">OF HOME</span>
@@ -45,13 +81,16 @@
       <a href="index.html" class="text-white transition">Home</a>
       <a href="about.html" class="hover:text-white transition">About</a>
       <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="house-types.html" class="hover:text-white transition">House Types</a>
       <a href="projects.html" class="hover:text-white transition">Projects</a>
+      <a href="process.html" class="hover:text-white transition">The Process</a>
+      <a href="investors.html" class="hover:text-white transition">Investors</a>
       <a href="diy.html" class="hover:text-white transition">DIY Blog</a>
       <a href="contact.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Contact</a>
     </nav>
     <!-- Mobile Hamburger -->
     <div class="md:hidden">
-      <button id="menuBtn" class="focus:outline-none">
+      <button id="menuBtn" class="focus:outline-none" aria-label="Toggle navigation" aria-expanded="false">
         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -63,151 +102,320 @@
     <a href="index.html" class="block px-6 py-3 text-white bg-gray-800">Home</a>
     <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">About</a>
     <a href="services.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Services</a>
+    <a href="house-types.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">House Types</a>
     <a href="projects.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Projects</a>
+    <a href="process.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">The Process</a>
+    <a href="investors.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Investors</a>
     <a href="diy.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">DIY Blog</a>
     <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Contact</a>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="relative h-[85vh] flex items-center justify-center text-center text-white pt-16">
-  <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41"
-       alt="Namibia construction site"
-       class="absolute inset-0 w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <div class="relative z-10 max-w-3xl px-6">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">
-      Building Strong Homes Across Namibia
-    </h2>
-    <p class="text-lg mb-8">
-      Quality construction, renovations, and DIY guidance you can trust.
-    </p>
-    <a href="contact.html"
-       class="bg-red-600 text-white px-8 py-4 rounded font-semibold hover:bg-red-700 transition">
-      Get a Free Quote
-    </a>
+<!-- Hero Section -->
+<section id="hero" class="relative h-96 bg-cover bg-center mt-16" style="background-image: url('https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=2000');">
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <h1 class="text-white text-4xl md:text-6xl font-bold text-center px-4">Quality Homes Built for Namibian Conditions</h1>
+    <a href="estimator.html" class="mt-6 bg-red-600 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700 transition">Free Building Cost Estimator</a>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section class="py-16">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800"
-         alt="Modern African home"
-         class="rounded shadow">
+<!-- About / Contact Info Section -->
+<section class="py-16" id="about">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">Trusted Namibian Construction Experts</h2>
+    <p class="text-center text-gray-700 mb-12">Proudly building homes across Namibia. From Windhoek to Okahandja, we deliver local expertise and quality workmanship for your family.</p>
 
-    <div>
-      <h3 class="text-3xl font-bold mb-4">About Heart of Home</h3>
-      <p class="text-gray-600 mb-4">
-        Heart of Home Construction is a Namibian-based construction company
-        specializing in residential homes, renovations, and practical DIY solutions.
-      </p>
-      <p class="text-gray-600">
-        We believe every family deserves a strong, safe, and beautiful home —
-        built with integrity and local expertise.
-      </p>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-red-600 mb-2">Location</h3>
+        <p>Okahandja, Namibia</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-red-600 mb-2">Contact Info</h3>
+        <p>📞 081 442 5143</p>
+        <p>📧 admin@rimonnamibia.com</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-red-600 mb-2">Project Contacts</h3>
+        <p>📞 081 458 6318</p>
+        <p>📞 081 650 3931</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+  <div class="container mx-auto px-6">
+    <h2 class="text-2xl font-bold text-center text-red-600 mb-6">Our Services</h2>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Namibian residential construction site with builders" loading="lazy">
+        <p>Design & Build Your Dream Home</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Modern home renovation in Namibia" loading="lazy">
+        <p>Personalized Home Architecture & Design</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Construction project manager on site" loading="lazy">
+        <p>Assistance in Choosing Plot SizAct as a senior frontend engineer.
+</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" class="w-full h-40 object-cover rounded mb-4" alt="Full home construction service" loading="lazy">
+        <p>Full Home Construction Services</p>
+      </div>
+    </div>
+    <p class="mt-6 text-center font-semibold">Special Location: Dolerite Ridge, Okahandja (next to The Shopping Mall and Osona)</p>
+  </div>
+</section>
+
+<!-- House Types & Pricing Section -->
+<section class="py-16 bg-white" id="house-types">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-red-600 mb-4">House Types & Pricing</h2>
+    <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Explore our affordable house designs built for Namibian families.</p>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <!-- Card 1 -->
+      <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-5xl mb-6">🏠</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-3">2-Bedroom Starter Home</h4>
+        <p class="text-gray-600 mb-6">Affordable and practical for first-time homeowners.</p>
+        <a href="house-types.html" class="text-red-600 font-semibold hover:underline">View Details →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-5xl mb-6">🏡</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-3">3-Bedroom Family Home</h4>
+        <p class="text-gray-600 mb-6">Comfortable living space designed for growing families.</p>
+        <a href="house-types.html" class="text-red-600 font-semibold hover:underline">View Details →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-5xl mb-6">✏️</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-3">Custom Home Design</h4>
+        <p class="text-gray-600 mb-6">Tailor-made homes to match your needs and budget.</p>
+        <a href="house-types.html" class="text-red-600 font-semibold hover:underline">View Details →</a>
+      </div>
+    </div>
+
+    <a href="house-types.html" class="bg-red-600 text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition inline-block">View All House Types & Pricing</a>
+  </div>
+</section>
+
+<!-- Dynamic Projects Section -->
+<section class="py-16 bg-gray-50" id="projects">
+  <div class="container mx-auto px-6">
+    <h2 class="text-2xl font-bold text-red-600 mb-6 text-center">Our Projects</h2>
+    <div id="projectsContainer" class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+      <!-- Project cards will be injected here -->
+    </div>
+  </div>
+</section>
+
+<script>
+  fetch('projects.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('projectsContainer');
+      data.forEach(project => {
+        const card = document.createElement('div');
+        card.className = "relative group";
+        card.innerHTML = `
+          <img class="rounded-lg shadow transition transform group-hover:scale-105" src="${project.image}" alt="${project.title}" loading="lazy" width="800" height="600">
+          <div class="absolute bottom-2 left-2 bg-white bg-opacity-80 p-2 rounded flex flex-col gap-1">
+            <h4 class="font-semibold">${project.title}</h4>
+            ${project.features.map(f => `<span class="text-sm">${f}</span>`).join('')}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    });
+</script>
+
+<!-- Why Choose Heart of Home Section -->
+<section class="py-16 bg-white" id="why-choose-us">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-red-600 mb-4">Why Choose Heart of Home</h2>
+    <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Namibian families choose us because we build with integrity, transparency, and local expertise.</p>
+
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <!-- Card 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-4xl mb-4">🇳🇦</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Namibian Expertise</h4>
+        <p class="text-gray-600 text-sm">We understand local regulations, climate, and building standards.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-4xl mb-4">💰</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Transparent Pricing</h4>
+        <p class="text-gray-600 text-sm">Clear costs with no hidden surprises.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-4xl mb-4">🛠️</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Quality Workmanship</h4>
+        <p class="text-gray-600 text-sm">Skilled teams using durable materials built to last.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <div class="text-red-600 text-4xl mb-4">📚</div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Guided DIY Support</h4>
+        <p class="text-gray-600 text-sm">Learn and save with expert DIY advice from our blog.</p>
+      </div>
+    </div>
+
+    <a href="contact.html" class="bg-red-600 text-white px-8 py-3 rounded font-bold hover:bg-red-700 transition inline-block">Get a Free Consultation</a>
+  </div>
+</section>
+
+<!-- DIY & Estimator Section -->
 <section class="py-16 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-10">Our Services</h3>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded shadow">
-        <h4 class="font-bold text-xl mb-2">Home Construction</h4>
-        <p class="text-gray-600">
-          From foundation to finish, we build homes that last.
-        </p>
-      </div>
-
-      <div class="bg-white p-6 rounded shadow">
-        <h4 class="font-bold text-xl mb-2">Renovations</h4>
-        <p class="text-gray-600">
-          Upgrade, expand, and modernize your existing home.
-        </p>
-      </div>
-
-      <div class="bg-white p-6 rounded shadow">
-        <h4 class="font-bold text-xl mb-2">DIY Guidance</h4>
-        <p class="text-gray-600">
-          Learn practical DIY skills through our step-by-step blog.
-        </p>
-      </div>
+  <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <!-- DIY Blog -->
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">DIY & Construction Tips</h2>
+      <p class="text-gray-600 mb-6">Expert advice for Namibian homeowners. Learn about maintenance, materials, and cost-saving tips.</p>
+      <a href="diy.html" class="bg-gray-900 text-white px-6 py-3 rounded font-bold hover:bg-gray-800 transition inline-block">Read Our Blog</a>
+    </div>
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Plan Your Budget</h2>
+      <p class="text-gray-600 mb-6">Get a quick construction cost estimate for your new home or renovation project.</p>
+      <a href="estimator.html" class="bg-red-600 text-white px-6 py-3 rounded font-bold hover:bg-red-700 transition inline-block">Use Cost Estimator</a>
     </div>
   </div>
 </section>
 
-<!-- ================= PROJECTS / SOCIAL PROOF ================= -->
-<section class="py-16">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-4">Recent Projects</h3>
-    <p class="text-gray-600 mb-10">
-      Real construction work from across Namibia 🇳🇦
+<!-- Investors Section -->
+<section class="py-16 bg-gray-900 text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Investors & Partnerships</h2>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-8">We offer attractive investment opportunities for partners looking to contribute to Namibia's housing development. Join us in building sustainable communities.</p>
+    <a href="investors.html" class="bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition">Partner With Us</a>
+  </div>
+</section>
+
+<!-- Service Areas SEO Section -->
+<section class="py-12 bg-white border-t border-gray-200" id="service-areas">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Construction Services in Namibia</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">
+      Heart of Home is proud to provide residential construction and renovation services across the region. 
+      We serve clients in <span class="font-semibold text-red-600">Okahandja</span>, <span class="font-semibold text-red-600">Windhoek</span>, 
+      <span class="font-semibold text-red-600">Otjiwarongo</span>, and throughout <span class="font-semibold text-red-600">Northern & Central Namibia</span>. 
+      Whether you are building a new family home or renovating an existing property, our team is ready to travel to your site.
     </p>
+  </div>
+</section>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="relative group">
-        <img src="https://images.unsplash.com/photo-1600596542815-2495db969cf7?q=80&w=800"
-             class="rounded shadow h-64 w-full object-cover">
-        <a href="https://www.facebook.com/profile.php?id=61575515670475"
-           target="_blank"
-           class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-          View on Facebook
-        </a>
-      </div>
+<!-- Contact / Lead Form -->
+<section class="bg-gray-900 text-white py-16" id="contact">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+    <p class="mb-6">Okahandja, Namibia | 📞 081 442 5143 | 📧 admin@rimonnamibia.com</p>
 
-      <div class="relative group">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800"
-             class="rounded shadow h-64 w-full object-cover">
-        <a href="https://www.facebook.com/profile.php?id=61575515670475"
-           target="_blank"
-           class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-          View on Facebook
-        </a>
-      </div>
+    <div class="max-w-md mx-auto bg-gray-800 p-6 rounded-lg mb-6">
+      <form action="https://formsubmit.co/admin@rimonnamibia.com" method="POST" class="flex flex-col gap-4">
+        <input type="hidden" name="_subject" value="New Lead from Footer">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://derflabesog.github.io/heartofhome/index.html">
 
-      <div class="relative group">
-        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800"
-             class="rounded shadow h-64 w-full object-cover">
-        <a href="https://www.facebook.com/profile.php?id=61575515670475"
-           target="_blank"
-           class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-          View on Facebook
-        </a>
-      </div>
+        <input type="text" name="name" placeholder="Name" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <input type="text" name="contact" placeholder="Email/Phone" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <textarea name="message" placeholder="I'm interested in..." rows="3" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required></textarea>
+        <button type="submit" class="bg-gradient-to-r from-red-600 to-red-500 text-white py-3 rounded font-bold hover:from-red-700 hover:to-red-600 transition transform hover:scale-105">Contact Us Now</button>
+      </form>
+    </div>
+
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://www.facebook.com/profile.php?id=61575515670475" target="_blank" class="hover:text-red-500 transition">Facebook</a>
+    </div>
+
+    <div class="mt-4">
+      <a href="company-profile.pdf" target="_blank" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition">Download Company Profile</a>
     </div>
   </div>
 </section>
 
-<!-- ================= CTA ================= -->
-<section class="py-16 bg-red-600 text-white text-center">
-  <h3 class="text-3xl font-bold mb-4">Let’s Build Your Dream Home</h3>
-  <p class="mb-6">
-    Contact us today for expert advice and quality construction services.
-  </p>
-  <a href="https://wa.me/264816466144"
-     target="_blank"
-     class="bg-white text-red-600 font-bold px-8 py-4 rounded hover:bg-gray-100 transition">
-    WhatsApp Us
-  </a>
-</section>
+<footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-8">
+      <!-- Column 1: Company -->
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="Heart of Home Logo" class="w-8 h-8 object-contain"/>
+          <span class="text-xl font-bold tracking-wide"><span class="text-red-600">HEART</span><span class="text-white">OF HOME</span></span>
+        </a>
+        <p class="text-gray-400 text-sm mb-4">
+          Heart of Home Construction is a Namibian building company specializing in residential construction, renovations, and DIY guidance.
+        </p>
+        <p class="text-gray-400 text-sm">
+          📍 Okahandja & Windhoek, Namibia 🇳🇦
+        </p>
+      </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-gray-900 text-white py-8">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <p class="mb-2">&copy; 2026 Heart of Home Construction | Namibia 🇳🇦</p>
-    <p class="text-sm text-gray-400">
-      Built with pride. Quality you can trust.
-    </p>
+      <!-- Column 2: Quick Links -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500 transition">About</a></li>
+          <li><a href="services.html" class="hover:text-red-500 transition">Services</a></li>
+          <li><a href="projects.html" class="hover:text-red-500 transition">Projects</a></li>
+          <li><a href="house-types.html" class="hover:text-red-500 transition">House Types</a></li>
+          <li><a href="diy.html" class="hover:text-red-500 transition">DIY Blog</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Legal & Tools -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Legal & Tools</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="faq.html" class="hover:text-red-500 transition">FAQ</a></li>
+          <li><a href="estimator.html" class="hover:text-red-500 transition">Estimator</a></li>
+          <li><a href="investors.html" class="hover:text-red-500 transition">Investors</a></li>
+          <li><a href="legal.html" class="hover:text-red-500 transition">Legal</a></li>
+          <li><a href="privacy.html" class="hover:text-red-500 transition">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-500 text-sm">&copy; 2026 Heart of Home Construction. All rights reserved.</p>
+      <p class="text-gray-600 text-xs mt-2">Built in Namibia 🇳🇦</p>
+    </div>
   </div>
 </footer>
 
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="abc123"></script>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      menuBtn.setAttribute('aria-expanded', isExpanded);
+    });
+  }
+</script>
+
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/264816466144?text=Hello%20Heart%20of%20Home,%20I%20am%20interested%20in%20construction%20services." class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 z-50 transition transform hover:scale-110" target="_blank" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/264814425143?text=Hello%20Heart%20of%20Home,%20I%20am%20interested%20in%20construction%20services." class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 z-50 transition transform hover:scale-110" target="_blank">
   <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 

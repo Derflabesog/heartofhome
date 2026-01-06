@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5 Common Building Mistakes to Avoid | Heart of Home</title>
+  <meta name="description" content="Learn how to avoid costly errors when building your first home in Namibia, from budget planning to choosing a contractor.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<header class="fixed top-0 left-0 w-full bg-gray-900 shadow z-50">
+  <div class="container mx-auto px-6 h-16 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/images/logo.png" alt="Heart of Home Logo" class="w-10 h-10 object-contain"/>
+      <span class="text-2xl font-bold tracking-wide"><span class="text-red-600">HEART</span><span class="text-white">OF HOME</span></span>
+    </a>
+    <nav class="hidden md:flex space-x-6 font-semibold text-gray-300 items-center">
+      <a href="index.html" class="hover:text-white transition">Home</a>
+      <a href="about.html" class="hover:text-white transition">About</a>
+      <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="projects.html" class="hover:text-white transition">Projects</a>
+      <a href="process.html" class="hover:text-white transition">The Process</a>
+      <a href="diy.html" class="text-white transition">DIY Blog</a>
+      <a href="contact.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Contact</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" class="focus:outline-none" aria-label="Toggle navigation" aria-expanded="false">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-gray-900">
+    <a href="index.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Home</a>
+    <a href="diy.html" class="block px-6 py-3 text-white bg-gray-800">DIY Blog</a>
+    <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Contact</a>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-6 pt-24 pb-16">
+  <article class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+    <h1 class="text-3xl md:text-4xl font-bold text-red-600 mb-4">5 Common Building Mistakes to Avoid in Namibia</h1>
+    <p class="text-sm text-gray-500 mb-6">Posted by Heart of Home • Construction 101</p>
+    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a782?q=80&w=800" class="rounded-lg mb-6 w-full h-64 object-cover" alt="A construction site with measuring tools" loading="lazy" width="800" height="600">
+    <div class="space-y-6 text-gray-700 leading-relaxed">
+      <p>Building your first home is an exciting milestone, but it requires careful planning to avoid costly surprises. This guide helps Namibian families navigate the process and avoid common mistakes.</p>
+      <h2 class="text-2xl font-bold pt-4 border-t border-gray-200">1. Not Understanding Your Budget</h2>
+      <p>Your total cost isn't just the building quote. Always factor in a contingency fund (10-15%) for unexpected costs. Remember to budget for municipal fees, utility connections (water/electricity), and landscaping.</p>
+      <h2 class="text-2xl font-bold pt-4 border-t border-gray-200">2. Ignoring Soil & Foundation</h2>
+      <p>This is the most critical part of your house. A cheap foundation is a recipe for future disaster. In many parts of Namibia, a proper soil assessment is necessary to determine the right foundation, preventing cracks and structural failure down the line.</p>
+      <div class="mt-8 p-4 bg-gray-50 border-l-4 border-red-600">
+        <p class="font-bold">Need professional help?</p>
+        <p>Contact Heart of Home today for a consultation on your next project. <a href="contact.html" class="text-red-600 underline">Get in touch.</a></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="bg-gray-900 text-white py-6 text-center">
+  <div class="container mx-auto px-6">
+    <h3 class="text-2xl font-bold mb-4">Heart of Home Construction</h3>
+    <p class="mb-6">Okahandja, Namibia | 📞 081 442 5143 | 📧 admin@rimonnamibia.com</p>
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://www.facebook.com/profile.php?id=61575515670475" target="_blank" class="hover:text-red-500 transition">Facebook</a>
+    </div>
+    <p class="text-gray-400 text-sm mb-4">&copy; 2026 Heart of Home Real Estate. All rights reserved.</p>
+    <div class="space-x-4">
+      <a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a>
+      <a href="legal.html" class="text-gray-400 hover:text-white">Legal</a>
+      <a href="investors.html" class="text-gray-400 hover:text-white">Investors</a>
+      <a href="diy.html" class="text-gray-400 hover:text-white">Blog</a>
+      <a href="contact.html" class="text-gray-400 hover:text-white">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      menuBtn.setAttribute('aria-expanded', isExpanded);
+    });
+  }
+</script>
+
+</body>
+</html>

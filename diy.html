@@ -27,9 +27,12 @@
   <div class="container mx-auto px-6 h-16 flex justify-between items-center">
     <!-- Logo -->
     <a href="index.html" class="flex items-center gap-3 group">
-      <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700 group-hover:border-red-600 transition-colors">
-        <span class="text-red-600 font-bold text-lg">H</span>
-      </div>
+      <img
+        src="assets/images/logo.png"
+        alt="Heart of Home Logo"
+        width="40" height="40"
+        class="w-10 h-10 object-contain"
+      />
       <span class="text-2xl font-bold tracking-wide">
         <span class="text-red-600">HEART</span>
         <span class="text-white">OF HOME</span>
@@ -41,12 +44,14 @@
       <a href="about.html" class="hover:text-white transition">About</a>
       <a href="services.html" class="hover:text-white transition">Services</a>
       <a href="projects.html" class="hover:text-white transition">Projects</a>
+      <a href="process.html" class="hover:text-white transition">The Process</a>
+      <a href="investors.html" class="hover:text-white transition">Investors</a>
       <a href="diy.html" class="text-white transition">DIY Blog</a>
       <a href="contact.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Contact</a>
     </nav>
     <!-- Mobile Hamburger -->
     <div class="md:hidden">
-      <button id="menuBtn" class="focus:outline-none">
+      <button id="menuBtn" class="focus:outline-none" aria-label="Toggle navigation" aria-expanded="false">
         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -59,65 +64,144 @@
     <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">About</a>
     <a href="services.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Services</a>
     <a href="projects.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Projects</a>
+    <a href="process.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">The Process</a>
+    <a href="investors.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Investors</a>
     <a href="diy.html" class="block px-6 py-3 text-white bg-gray-800">DIY Blog</a>
     <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Contact</a>
   </div>
 </header>
 
-<main class="max-w-5xl mx-auto px-6 pt-24 pb-16">
+<main class="max-w-6xl mx-auto px-6 pt-24 pb-16">
 
 <h1 class="text-4xl font-bold text-red-600 mb-4">Namibian Home & Construction Blog</h1>
-<p class="mb-10 text-gray-600">Practical advice, maintenance tips, and construction guides for Namibian homeowners.</p>
+<p class="mb-10 text-gray-600">Your guide to building, renovating, and maintaining your home in Namibia. Professional advice for the DIY enthusiast.</p>
 
+<!-- Static DIY Blog Posts -->
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <!-- Post 1 -->
-  <article class="bg-white rounded shadow hover:shadow-lg transition">
-    <a href="blog-foundation.html"><img src="https://images.unsplash.com/photo-1593604340846-4fbe976bd128?q=80&w=800" class="h-48 w-full object-cover" alt="Building foundations in Namibia" loading="lazy"></a>
-    <div class="p-6">
-      <h2 class="text-xl font-bold mb-2"><a href="blog-foundation.html" class="hover:text-red-600">Building Foundations for Namibian Soil</a></h2>
-      <p class="text-gray-600 text-sm mb-4">Why rock-face foundations are essential for stability in local conditions.</p>
-      <a href="blog-foundation.html" class="text-red-600 font-semibold text-sm">Read More →</a>
+  <!-- Blog Post: Affordable Designs -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-affordable-designs.html">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Affordable Designs" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-affordable-designs.html" class="hover:text-red-600">Affordable Home Designs</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Discover affordable home design tips that work perfectly with Namibia's unique climate.</p>
+      <div class="mt-auto">
+        <a href="blog-affordable-designs.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
     </div>
   </article>
 
-  <!-- Post 2 -->
-  <article class="bg-white rounded shadow hover:shadow-lg transition">
-    <a href="blog-roofing.html"><img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=800" class="h-48 w-full object-cover" alt="Roofing tips" loading="lazy"></a>
-    <div class="p-6">
-      <h2 class="text-xl font-bold mb-2"><a href="blog-roofing.html" class="hover:text-red-600">Roofing Materials for Hot Climates</a></h2>
-      <p class="text-gray-600 text-sm mb-4">Choosing between IBR sheeting and tiles for waterproofing and heat control.</p>
-      <a href="blog-roofing.html" class="text-red-600 font-semibold text-sm">Read More →</a>
-    </div>
-  </article>
-
-  <!-- Post 3 -->
-  <article class="bg-white rounded shadow hover:shadow-lg transition">
-    <a href="blog-cost-saving.html"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800" class="h-48 w-full object-cover" alt="Budget renovations" loading="lazy"></a>
-    <div class="p-6">
-      <h2 class="text-xl font-bold mb-2"><a href="blog-cost-saving.html" class="hover:text-red-600">Cost-Saving Construction Tips</a></h2>
-      <p class="text-gray-600 text-sm mb-4">How to build efficiently without compromising on quality.</p>
-      <a href="blog-cost-saving.html" class="text-red-600 font-semibold text-sm">Read More →</a>
-    </div>
-  </article>
-
-  <!-- Post 4 -->
-  <article class="bg-white rounded shadow hover:shadow-lg transition">
-    <a href="blog-maintenance.html"><img src="https://images.unsplash.com/photo-1632923982363-22244d243964?q=80&w=800" class="h-48 w-full object-cover" alt="Maintenance checklist" loading="lazy"></a>
-    <div class="p-6">
-      <h2 class="text-xl font-bold mb-2"><a href="blog-maintenance.html" class="hover:text-red-600">DIY Home Maintenance Checklist</a></h2>
-      <p class="text-gray-600 text-sm mb-4">Seasonal checks to prevent costly repairs down the line.</p>
-      <a href="blog-maintenance.html" class="text-red-600 font-semibold text-sm">Read More →</a>
-    </div>
-  </article>
-
-  <!-- Post 5 -->
-  <article class="bg-white rounded shadow hover:shadow-lg transition">
-    <a href="blog-approvals.html"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" class="h-48 w-full object-cover" alt="Planning approvals" loading="lazy"></a>
-    <div class="p-6">
+  <!-- Blog Post: Approvals -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-approvals.html">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Approvals" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
       <h2 class="text-xl font-bold mb-2"><a href="blog-approvals.html" class="hover:text-red-600">Planning Approvals in Namibia</a></h2>
-      <p class="text-gray-600 text-sm mb-4">Navigating municipal regulations for your new build or extension.</p>
-      <a href="blog-approvals.html" class="text-red-600 font-semibold text-sm">Read More →</a>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Understanding the municipal building approval process in Namibia.</p>
+      <div class="mt-auto">
+        <a href="blog-approvals.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Maintenance -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-maintenance.html">
+      <img src="https://images.unsplash.com/photo-1632923982363-22244d243964?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Maintenance" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-maintenance.html" class="hover:text-red-600">DIY Home Maintenance</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Seasonal maintenance tips for Namibian homeowners to prevent costly repairs.</p>
+      <div class="mt-auto">
+        <a href="blog-maintenance.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Cost Saving -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-cost-saving.html">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Cost Saving" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-cost-saving.html" class="hover:text-red-600">Cost-Saving Construction Tips</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">How to build efficiently in Namibia without compromising on quality.</p>
+      <div class="mt-auto">
+        <a href="blog-cost-saving.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Roofing -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-roofing.html">
+      <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Roofing" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-roofing.html" class="hover:text-red-600">Roofing Materials for Hot Climates</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Choosing the right roofing material for Namibia's hot climate: IBR vs Tiles.</p>
+      <div class="mt-auto">
+        <a href="blog-roofing.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Foundations -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-foundation.html">
+      <img src="https://images.unsplash.com/photo-1593604340846-4fbe976bd128?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Foundations" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-foundation.html" class="hover:text-red-600">Foundations for Namibian Soil</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Why rock-face foundations are essential for stability in local soil conditions.</p>
+      <div class="mt-auto">
+        <a href="blog-foundation.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Building Mistakes -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="001-building-mistakes.html">
+      <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a782?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Mistakes" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="001-building-mistakes.html" class="hover:text-red-600">5 Common Building Mistakes</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Learn how to avoid costly errors when building your first home in Namibia.</p>
+      <div class="mt-auto">
+        <a href="001-building-mistakes.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Build Time -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-build-time.html">
+      <img src="https://images.unsplash.com/photo-1507537297725-24a1c434c67b?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Build Time" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-build-time.html" class="hover:text-red-600">How Long Does It Take?</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">A realistic timeline for building a house in Namibia, from approvals to handover.</p>
+      <div class="mt-auto">
+        <a href="blog-build-time.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blog Post: Engineer Led -->
+  <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <a href="blog-engineer-led.html">
+      <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800" class="h-48 w-full object-cover rounded-t-lg" alt="Engineer Led" loading="lazy" width="800" height="600">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl font-bold mb-2"><a href="blog-engineer-led.html" class="hover:text-red-600">Why Engineer-Led Matters</a></h2>
+      <p class="text-gray-600 text-sm mb-4 flex-grow">Understand the benefits of choosing an engineer-led construction team for your home.</p>
+      <div class="mt-auto">
+        <a href="blog-engineer-led.html" class="text-red-600 font-semibold text-sm hover:underline">Read More →</a>
+      </div>
     </div>
   </article>
 
@@ -125,9 +209,69 @@
 
 </main>
 
-<footer class="bg-gray-900 text-white py-6 text-center">
-&copy; 2026 Heart of Home Construction
+<footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-8">
+      <!-- Column 1: Company -->
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="Heart of Home Logo" class="w-8 h-8 object-contain"/>
+          <span class="text-xl font-bold tracking-wide"><span class="text-red-600">HEART</span><span class="text-white">OF HOME</span></span>
+        </a>
+        <p class="text-gray-400 text-sm mb-4">
+          Heart of Home Construction is a Namibian building company specializing in residential construction, renovations, and DIY guidance.
+        </p>
+        <p class="text-gray-400 text-sm">
+          📍 Okahandja & Windhoek, Namibia 🇳🇦
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500 transition">About</a></li>
+          <li><a href="services.html" class="hover:text-red-500 transition">Services</a></li>
+          <li><a href="projects.html" class="hover:text-red-500 transition">Projects</a></li>
+          <li><a href="house-types.html" class="hover:text-red-500 transition">House Types</a></li>
+          <li><a href="diy.html" class="hover:text-red-500 transition">DIY Blog</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Legal & Tools -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Legal & Tools</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="faq.html" class="hover:text-red-500 transition">FAQ</a></li>
+          <li><a href="estimator.html" class="hover:text-red-500 transition">Estimator</a></li>
+          <li><a href="investors.html" class="hover:text-red-500 transition">Investors</a></li>
+          <li><a href="legal.html" class="hover:text-red-500 transition">Legal</a></li>
+          <li><a href="privacy.html" class="hover:text-red-500 transition">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-500 text-sm">&copy; 2026 Heart of Home Construction. All rights reserved.</p>
+      <p class="text-gray-600 text-xs mt-2">Built in Namibia 🇳🇦</p>
+    </div>
+  </div>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      menuBtn.setAttribute('aria-expanded', isExpanded);
+    });
+  }
+</script>
 
 </body>
 </html>

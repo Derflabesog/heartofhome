@@ -1,0 +1,58 @@
+[
+  {
+    "id": "007",
+    "title": "Affordable Home Designs for Namibia",
+    "description": "Discover affordable home design tips that work perfectly with Namibia's unique climate.",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
+    "url": "blog-affordable-designs.html",
+    "date": "October 26, 2024"
+  },
+  {
+    "id": "006",
+    "title": "Navigating Planning Approvals in Namibia",
+    "description": "A simple guide to the municipal approval process for your construction project.",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800",
+    "url": "blog-approvals.html",
+    "date": "October 25, 2024"
+  },
+  {
+    "id": "005",
+    "title": "DIY Home Maintenance Checklist",
+    "description": "A seasonal checklist to keep your Namibian home in top condition and prevent costly repairs.",
+    "image": "https://images.unsplash.com/photo-1632923982363-22244d243964?q=80&w=800",
+    "url": "blog-maintenance.html",
+    "date": "October 24, 2024"
+  },
+  {
+    "id": "004",
+    "title": "Cost-Saving Construction Tips",
+    "description": "Learn how to build efficiently and save money on your project without compromising on quality.",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800",
+    "url": "blog-cost-saving.html",
+    "date": "October 23, 2024"
+  },
+  {
+    "id": "003",
+    "title": "Roofing Materials for Hot Climates",
+    "description": "Choosing between IBR sheeting and tiles for waterproofing and optimal heat control.",
+    "image": "https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=800",
+    "url": "blog-roofing.html",
+    "date": "October 22, 2024"
+  },
+  {
+    "id": "002",
+    "title": "Foundations for Namibian Soil",
+    "description": "Why rock-face foundations are essential for stability in local soil conditions.",
+    "image": "https://images.unsplash.com/photo-1593604340846-4fbe976bd128?q=80&w=800",
+    "url": "blog-foundation.html",
+    "date": "October 21, 2024"
+  },
+  {
+    "id": "001",
+    "title": "5 Common Building Mistakes to Avoid",
+    "description": "Learn how to avoid costly errors when building your first home in Namibia.",
+    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a782?q=80&w=800",
+    "url": "001-building-mistakes.html",
+    "date": "October 20, 2024"
+  }
+]

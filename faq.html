@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frequently asked questions about building a home in Namibia. Learn about timelines, costs, and our construction process.">
     <title>Construction FAQ | Heart of Home Namibia</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script defer src="assets/js/main.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
     <!-- Google Analytics GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -16,99 +18,247 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How long does a typical project take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depending on size and complexity, projects usually take 6–12 months from planning to handover."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can I customize my house design?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! We work closely with clients to tailor every detail to their preferences."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is included in the construction cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All major materials, labor, project management, and quality inspections are included. Optional add-ons are extra."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you provide financing or payment plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, flexible payment options are available to suit your needs."
+        }
+      }]
+    }
+    </script>
 </head>
-<body class="site-body">
+<body class="bg-gray-100 text-gray-800">
 
-    <header class="header" id="mainHeader">
-        <div class="logo">
-            <a href="index.html"><span>HEART OF</span> HOME</a>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="projects.html">Projects</a>
-            <a href="house-types.html">House Types</a>
-            <a href="process.html">The Process</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
+    <!-- Sticky Top Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-gray-900 shadow z-50">
+      <div class="container mx-auto px-6 flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img
+            src="assets/images/logo.png"
+            alt="Heart of Home Logo"
+            width="40" height="40"
+            class="w-10 h-10 object-contain"
+          />
+          <span class="text-2xl font-bold tracking-wide">
+            <span class="text-red-600">HEART</span>
+            <span class="text-white">OF HOME</span>
+          </span>
+        </a>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 font-semibold text-gray-300 items-center">
+          <a href="index.html" class="text-white transition">Home</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+          <a href="services.html" class="hover:text-white transition">Services</a>
+          <a href="house-types.html" class="hover:text-white transition">House Types</a>
+          <a href="projects.html" class="hover:text-white transition">Projects</a>
+          <a href="process.html" class="hover:text-white transition">The Process</a>
+          <a href="investors.html" class="hover:text-white transition">Investors</a>
+          <a href="diy.html" class="hover:text-white transition">DIY Blog</a>
+          <a href="contact.html" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Contact</a>
         </nav>
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menuBtn" class="focus:outline-none" aria-label="Toggle navigation" aria-expanded="false">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-gray-900">
+        <a href="index.html" class="block px-6 py-3 text-white bg-gray-800">Home</a>
+        <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">About</a>
+        <a href="services.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Services</a>
+        <a href="house-types.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">House Types</a>
+        <a href="projects.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Projects</a>
+        <a href="process.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">The Process</a>
+        <a href="investors.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Investors</a>
+        <a href="diy.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">DIY Blog</a>
+        <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-800">Contact</a>
+      </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <h1>Frequently Asked Questions</h1>
-            <p>We answer the most common questions to help you plan your dream home confidently.</p>
+        <section class="relative h-80 bg-cover bg-center mt-16" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000');">
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center px-4">
+                <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+                <p class="text-gray-200 text-lg max-w-2xl">We answer the most common questions to help you plan your dream home confidently.</p>
+            </div>
         </section>
 
         <!-- FAQ List -->
-        <section class="section">
-            <div class="container" style="max-width: 900px;">
-                <h2>Your Questions, Answered</h2>
-                <div id="faq-list">
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>How long does a typical project take?</h3>
-                      <p>Depending on size and complexity, projects usually take 6–12 months from planning to handover.</p>
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Your Questions, Answered</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">How long does a typical project take?</h3>
+                      <p class="text-gray-700">Depending on size and complexity, projects usually take 6–12 months from planning to handover.</p>
                     </div>
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>Can I customize my house design?</h3>
-                      <p>Absolutely! We work closely with clients to tailor every detail to their preferences.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">Can I customize my house design?</h3>
+                      <p class="text-gray-700">Absolutely! We work closely with clients to tailor every detail to their preferences.</p>
                     </div>
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>What is included in the construction cost?</h3>
-                      <p>All major materials, labor, project management, and quality inspections are included. Optional add-ons are extra.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">What is included in the construction cost?</h3>
+                      <p class="text-gray-700">All major materials, labor, project management, and quality inspections are included. Optional add-ons are extra.</p>
                     </div>
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>Do you provide financing or payment plans?</h3>
-                      <p>Yes, flexible payment options are available to suit your needs.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">Do you provide financing or payment plans?</h3>
+                      <p class="text-gray-700">Yes, flexible payment options are available to suit your needs.</p>
                     </div>
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>How do you ensure construction quality?</h3>
-                      <p>We use high-quality materials, skilled labor, and regular quality checks at each stage.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">How do you ensure construction quality?</h3>
+                      <p class="text-gray-700">We use high-quality materials, skilled labor, and regular quality checks at each stage.</p>
                     </div>
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>Can I track the progress of my project?</h3>
-                      <p>Yes, clients receive regular updates with photos, reports, and site visits if desired.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">Can I track the progress of my project?</h3>
+                      <p class="text-gray-700">Yes, clients receive regular updates with photos, reports, and site visits if desired.</p>
                     </div>
-                    <div class="faq-item" data-aos="fade-up">
-                      <h3>What happens if there are changes during construction?</h3>
-                      <p>We discuss change requests and update timelines and budgets transparently before proceeding.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                      <h3 class="text-xl font-bold text-red-600 mb-2">What happens if there are changes during construction?</h3>
+                      <p class="text-gray-700">We discuss change requests and update timelines and budgets transparently before proceeding.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="section dark">
-            <div class="container" style="text-align: center;">
-                <h2>Still have questions?</h2>
-                <a href="contact.html" class="btn">Contact Us!</a>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Still have questions?</h2>
+                <p class="text-gray-600 mb-8">Can't find the answer you're looking for? Please chat to our friendly team.</p>
+                <a href="contact.html" class="bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition">Contact Us</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p><strong>Heart of Home Family Housing</strong></p>
-        <p>Okahandja, Namibia</p>
-        <p>Phone: <a href="tel:0814586318">081 458 6318</a> | Email: <a href="mailto:admin@rimonnamibia.com">admin@rimonnamibia.com</a></p>
-        <br>
-        <p>&copy; 2024 Heart of Home Family Housing. All Rights Reserved.</p>
-        <nav>
-            <a href="faq.html">FAQ</a>
-            <a href="estimator.html">Estimator</a>
-            <a href="investors.html">Investors</a>
-            <a href="legal.html">Legal</a>
-        </nav>
-        <p class="footer-tagline">Quality Construction & Reliable Service</p>
-    </footer>
+<!-- Contact / Lead Form Footer -->
+<section class="bg-gray-900 text-white py-16" id="contact">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+    <p class="mb-6">Okahandja, Namibia | 📞 081 442 5143 | 📧 admin@rimonnamibia.com</p>
 
-    <a href="https://wa.me/264814586318" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"></a>
-    <div class="social-float">
-      <a href="#" class="fb" title="Facebook">F</a>
-      <a href="#" class="ig" title="Instagram">I</a>
-      <a href="#" class="wa" title="WhatsApp">W</a>
+    <div class="max-w-md mx-auto bg-gray-800 p-6 rounded-lg mb-6">
+      <form action="https://formsubmit.co/admin@rimonnamibia.com" method="POST" class="flex flex-col gap-4">
+        <input type="hidden" name="_subject" value="New Lead from FAQ Page">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://derflabesog.github.io/heartofhome/faq.html">
+
+        <input type="text" name="name" placeholder="Name" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <input type="text" name="contact" placeholder="Email/Phone" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <textarea name="message" placeholder="I'm interested in..." rows="3" class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-red-500" required></textarea>
+        <button type="submit" class="bg-gradient-to-r from-red-600 to-red-500 text-white py-3 rounded font-bold hover:from-red-700 hover:to-red-600 transition transform hover:scale-105">Contact Us Now</button>
+      </form>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://www.facebook.com/profile.php?id=61575515670475" target="_blank" class="hover:text-red-500 transition">Facebook</a>
+    </div>
+    <div class="mt-4">
+      <a href="company-profile.pdf" target="_blank" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition">Download Company Profile</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-8">
+      <!-- Column 1: Company -->
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="Heart of Home Logo" class="w-8 h-8 object-contain"/>
+          <span class="text-xl font-bold tracking-wide"><span class="text-red-600">HEART</span><span class="text-white">OF HOME</span></span>
+        </a>
+        <p class="text-gray-400 text-sm mb-4">
+          Heart of Home Construction is a Namibian building company specializing in residential construction, renovations, and DIY guidance.
+        </p>
+        <p class="text-gray-400 text-sm">
+          📍 Okahandja & Windhoek, Namibia 🇳🇦
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-red-500 transition">About</a></li>
+          <li><a href="services.html" class="hover:text-red-500 transition">Services</a></li>
+          <li><a href="projects.html" class="hover:text-red-500 transition">Projects</a></li>
+          <li><a href="house-types.html" class="hover:text-red-500 transition">House Types</a></li>
+          <li><a href="diy.html" class="hover:text-red-500 transition">DIY Blog</a></li>
+          <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Legal & Tools -->
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white border-b border-red-600 inline-block pb-1">Legal & Tools</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="faq.html" class="hover:text-red-500 transition">FAQ</a></li>
+          <li><a href="estimator.html" class="hover:text-red-500 transition">Estimator</a></li>
+          <li><a href="investors.html" class="hover:text-red-500 transition">Investors</a></li>
+          <li><a href="legal.html" class="hover:text-red-500 transition">Legal</a></li>
+          <li><a href="privacy.html" class="hover:text-red-500 transition">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-500 text-sm">&copy; 2026 Heart of Home Construction. All rights reserved.</p>
+      <p class="text-gray-600 text-xs mt-2">Built in Namibia 🇳🇦</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      menuBtn.setAttribute('aria-expanded', isExpanded);
+    });
+  }
+</script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/264814425143?text=Hello%20Heart%20of%20Home,%20I%20have%20a%20question%20from%20your%20FAQ%20page." class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 z-50 transition transform hover:scale-110" target="_blank">
+  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
 </body>
 </html>

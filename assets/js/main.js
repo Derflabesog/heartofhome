@@ -116,4 +116,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // WhatsApp Click Tracking
+    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                    'event_category': 'lead',
+                    'event_label': 'whatsapp_contact'
+                });
+            }
+        });
+    });
 });
